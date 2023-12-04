@@ -10,10 +10,10 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
 };
 
 const client = new S3Client({
-    region:"us-east-1",
+    region:"eu-north-1",
     credentials:{
-        accessKeyId:"AKIA3SNMGC5JMW3REJ3U",
-        secretAccessKey:"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",
+        accessKeyId:"AKIA6O5YTUFGQ5CUBLUP",
+        secretAccessKey:"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",
     }
 });
 

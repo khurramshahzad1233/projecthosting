@@ -18,7 +18,7 @@ const StepLast = ({ previousStep, information, files, analytic, userInfo }) => {
     formdata.append("analysisoption", analytic);
 
     axios
-      .post("http://localhost:5000/api/aws/uploadfile", formdata, {
+      .post("/api/aws/uploadfile", formdata, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
