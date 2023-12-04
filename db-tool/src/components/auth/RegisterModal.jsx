@@ -25,7 +25,7 @@ const RegisterModal = ({ open, onClose, loginButton }) => {
     } else {
       let data = { email: email, password: password };
       axios
-        .post("http://localhost:5000/api/user/register", data)
+        .post("/api/user/register", data)
         .then((res) => {
           console.log(res);
           localStorage.setItem("auth", JSON.stringify(res.data));

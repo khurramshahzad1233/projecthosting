@@ -23,7 +23,7 @@ const LoginModal = () => {
     const token = res.credential;
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/google/new",
+        "/api/google/new",
         { token }
       );
       console.log(response)
@@ -48,7 +48,7 @@ const LoginModal = () => {
     e.preventDefault();
     let data = { email: email, password: password };
     axios
-      .post("http://localhost:5000/api/user/login", data)
+      .post("/api/user/login", data)
       .then((res) => {
         console.log(res);
         localStorage.setItem("auth", JSON.stringify(res.data));
